@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Crater App Logged-In successfully]]>
+    </line>
+    <line>
+      <![CDATA[New Customer added successfully]]>
+    </line>
+    <line>
+      <![CDATA[New Item added successfully]]>
+    </line>
+    <line>
+      <![CDATA[Unable to add New Invoice]]>
+    </line>
+    <line>
+      <![CDATA[Unable to proceed payment]]>
+    </line>
+    <line>
+      <![CDATA[Crater App Test completed successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-07-08T16:07:14Z" name="Home Page Test" finished-at="2020-07-08T16:09:08Z" duration-ms="113462">
+    <groups>
+      <group name="regression">
+        <method signature="CraterAppTest.craterLogin()[pri:0, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="craterLogin" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newCustomerAddition()[pri:2, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newCustomerAddition" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newInvoiceAddition()[pri:4, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newInvoiceAddition" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newItemAddition()[pri:3, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newItemAddition" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newPayment()[pri:5, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newPayment" class="demo.com.qa.testcases.CraterAppTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CraterAppTest.craterLogin()[pri:0, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="craterLogin" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newCustomerAddition()[pri:2, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newCustomerAddition" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newInvoiceAddition()[pri:4, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newInvoiceAddition" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newItemAddition()[pri:3, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newItemAddition" class="demo.com.qa.testcases.CraterAppTest"/>
+        <method signature="CraterAppTest.newPayment()[pri:5, instance:demo.com.qa.testcases.CraterAppTest@60611244]" name="newPayment" class="demo.com.qa.testcases.CraterAppTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2020-07-08T16:07:14Z" name="Crater App Test" finished-at="2020-07-08T16:09:08Z" duration-ms="113462">
+      <class name="demo.com.qa.testcases.CraterAppTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:demo.com.qa.testcases.CraterAppTest@60611244]" started-at="2020-07-08T16:07:14Z" name="openBrowser" description="Browser setup and App Navigation" finished-at="2020-07-08T16:07:33Z" duration-ms="19081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="craterLogin()[pri:0, instance:demo.com.qa.testcases.CraterAppTest@60611244]" started-at="2020-07-08T16:07:33Z" name="craterLogin" description="Crater App login test" finished-at="2020-07-08T16:07:46Z" duration-ms="12341" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Crater App Logged-In successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- craterLogin -->
+        <test-method signature="newCustomerAddition()[pri:2, instance:demo.com.qa.testcases.CraterAppTest@60611244]" started-at="2020-07-08T16:07:46Z" name="newCustomerAddition" description="Add New Customer test" finished-at="2020-07-08T16:08:26Z" depends-on-methods="demo.com.qa.testcases.CraterAppTest.craterLogin" duration-ms="40703" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[New Customer added successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newCustomerAddition -->
+        <test-method signature="newItemAddition()[pri:3, instance:demo.com.qa.testcases.CraterAppTest@60611244]" started-at="2020-07-08T16:08:26Z" name="newItemAddition" description="Add New Item test" finished-at="2020-07-08T16:08:45Z" depends-on-methods="demo.com.qa.testcases.CraterAppTest.craterLogin" duration-ms="18986" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[New Item added successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newItemAddition -->
+        <test-method signature="newInvoiceAddition()[pri:4, instance:demo.com.qa.testcases.CraterAppTest@60611244]" started-at="2020-07-08T16:08:45Z" name="newInvoiceAddition" description="Add New Invoice test" finished-at="2020-07-08T16:08:57Z" depends-on-methods="demo.com.qa.testcases.CraterAppTest.craterLogin" duration-ms="12028" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to add New Invoice]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newInvoiceAddition -->
+        <test-method signature="newPayment()[pri:5, instance:demo.com.qa.testcases.CraterAppTest@60611244]" started-at="2020-07-08T16:08:57Z" name="newPayment" description="New Payment test" finished-at="2020-07-08T16:09:07Z" depends-on-methods="demo.com.qa.testcases.CraterAppTest.craterLogin" duration-ms="9557" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to proceed payment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newPayment -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:demo.com.qa.testcases.CraterAppTest@60611244]" started-at="2020-07-08T16:09:07Z" name="afterTest" finished-at="2020-07-08T16:09:08Z" duration-ms="734" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Crater App Test completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- demo.com.qa.testcases.CraterAppTest -->
+    </test> <!-- Crater App Test -->
+  </suite> <!-- Home Page Test -->
+</testng-results>

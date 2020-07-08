@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page Test">
+ 
+  <test name="Crater App Test">
+  <parameter name="browser" value="chrome"/>
+  <groups>
+         <run>
+            <include name = "smoke" />
+         </run>
+      </groups>
+    <classes>
+      <class name="demo.com.qa.testcases.CraterAppTest"/>
+    </classes>
+  </test>
+ <!--
+    <test name="Internet Explorer Test">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="demo.com.qa.crater.HomePage"/>
+    </classes>
+  </test>
+  
+  <test name="Firefox Test">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="demo.com.qa.crater.HomePage"/>
+    </classes>
+  </test>
+  -->
+</suite>

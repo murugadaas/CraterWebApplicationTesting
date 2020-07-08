@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Home Page Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Crater App Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="demo.com.qa.testcases.CraterAppTest">
+        <methods>
+          <include name="newInvoiceAddition"/>
+          <include name="newPayment"/>
+          <include name="afterTest"/>
+          <include name="craterLogin"/>
+          <include name="openBrowser"/>
+          <include name="newItemAddition"/>
+        </methods>
+      </class> <!-- demo.com.qa.testcases.CraterAppTest -->
+    </classes>
+  </test> <!-- Crater App Test(failed) -->
+</suite> <!-- Failed suite [Home Page Test] -->
